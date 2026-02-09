@@ -1,157 +1,193 @@
 export const siteConfig = {
-  name: "Chez Justine",
-  tagline: "Crêperie & Salon de Thé",
-  subtitle: "Au cœur d'Erquy, où tradition et douceur se rencontrent",
-  description: "Crêperie artisanale et salon de thé à Erquy. Justine vous accueille dans un cadre cosy pour déguster galettes et crêpes 100% faites maison, du petit-déjeuner au dîner.",
+  name: "L'Épicerie",
+  fullName: "L'Épicerie - Le Cœur du Village",
+  tagline: "Votre commerce de proximité",
+  description: "Épicerie de village au Quillio : produits frais et locaux, terrasse conviviale, hébergement. Ouvert 7j/7 !",
   
   contact: {
-    address: "14 bis, rue Foch",
-    postalCode: "22430",
-    city: "Erquy",
-    phone: "02 96 33 61 55",
-    email: "contact@chez-sylvie-erquy.fr",
-    coordinates: {
-      lat: 48.6311,
-      lng: -2.4644
+    address: "1 Route Départementale 35, 22460 Le Quillio",
+    commune: "Le Quillio",
+    department: "Côtes-d'Armor",
+    region: "Bretagne",
+    phone: "06 69 02 22 92",
+    email: "contact@lepicerie-lequillio.fr",
+    location: {
+      lat: 48.1667,
+      lng: -2.9167
     }
   },
 
   hours: {
-    saison: {
-      label: "En saison (avril à septembre)",
-      schedule: [
-        { days: "Lundi au mercredi", hours: "7h30 - 22h30" },
-        { days: "Jeudi", hours: "Fermé" },
-        { days: "Vendredi et samedi", hours: "7h30 - 22h30" },
-        { days: "Dimanche", hours: "Fermé" }
-      ]
+    schedule: {
+      "Lundi - Samedi": "7h-13h • 16h-20h",
+      "Dimanche": "8h-13h"
     },
-    horsSaison: {
-      label: "Hors saison (octobre à mars)",
-      schedule: [
-        { days: "Lundi au mercredi", hours: "8h30 - 21h00" },
-        { days: "Jeudi", hours: "8h30 - 15h00" },
-        { days: "Vendredi", hours: "8h30 - 21h00" },
-        { days: "Samedi", hours: "7h30 - 21h00" },
-        { days: "Dimanche", hours: "Fermé" }
-      ]
-    },
-    note: "Réservation recommandée en saison"
+    note: "Ouvert 7 jours sur 7",
+    terrasse: "Terrasse ouverte avril-septembre • 16h-20h"
   },
 
-  story: {
-    title: "L'histoire de Justine",
-    intro: "En décembre 2024, Justine Genty réalise son rêve en reprenant cette crêperie du centre-ville d'Erquy. Après avoir créé Sans Lamballage à Lamballe, une épicerie engagée dans le zéro déchet, elle revient à ses premières amours : la cuisine et le partage.",
-    philosophy: "« J'ai voulu m'approprier ce lieu avec douceur et bienveillance », confie Justine. Respectant l'héritage de Sylvie tout en y apportant sa touche personnelle, elle perpétue une tradition d'excellence artisanale où chaque galette, chaque crêpe raconte une histoire de passion et d'authenticité.",
-    values: [
+  presentation: {
+    title: "Bienvenue dans votre épicerie de village",
+    description: "Au cœur du Quillio, L'Épicerie vous accueille tous les jours pour vos courses du quotidien. Un lieu convivial où se mêlent produits de qualité, sourire et bonne humeur !"
+  },
+
+  products: {
+    title: "Nos Produits",
+    categories: [
       {
-        title: "100% Fait Maison",
-        description: "De la pâte aux garnitures, tout est préparé avec soin dans notre cuisine ouverte"
+        name: "Pain & Viennoiseries",
+        emoji: "🥖",
+        items: ["Pain frais quotidien", "Viennoiseries", "Gâteaux bretons"]
       },
       {
-        title: "Produits de Qualité",
-        description: "Des ingrédients soigneusement sélectionnés, privilégiant les producteurs locaux"
+        name: "Produits Frais",
+        emoji: "🥛",
+        items: ["Lait", "Œufs", "Fromages locaux", "Beurre", "Yaourts"]
       },
       {
-        title: "Accueil Chaleureux",
-        description: "Un cadre cosy où l'on prend le temps de partager un moment gourmand"
+        name: "Fruits & Légumes",
+        emoji: "🥕",
+        items: ["Légumes de producteurs locaux", "Fruits de saison"]
+      },
+      {
+        name: "Épicerie",
+        emoji: "🛒",
+        items: ["Conserves", "Pâtes & riz", "Huiles", "Condiments"]
+      },
+      {
+        name: "Terroir Breton",
+        emoji: "🇫🇷",
+        items: ["Cidre", "Pâté Hénaff", "Sardines", "Confitures artisanales", "Miel local"]
+      },
+      {
+        name: "Surgelés & Glaces",
+        emoji: "🍦",
+        items: ["Glaces artisanales", "Produits surgelés"]
       }
     ]
   },
 
-  ambiance: {
-    title: "Un Cocon Gourmand",
-    description: "À deux pas de la plage, découvrez notre crêperie au décor blanc et bleu, pensée comme un refuge chaleureux. La cuisine ouverte vous invite à découvrir le spectacle de la confection des galettes, tandis qu'à l'arrière se cache un jardin secret, havre de paix abrité des regards.",
-    features: [
-      "Décoration soignée aux tons blanc et bleu océan",
-      "Cuisine ouverte pour voir les crêpes se faire en direct",
-      "Jardin arboré à l'arrière, calme et abrité",
-      "Ambiance cosy et décontractée",
-      "Idéal pour familles, couples et groupes d'amis"
+  services: {
+    title: "Nos Services",
+    list: [
+      {
+        name: "Relais Colis",
+        description: "Point Mondial Relay - Dépôt et retrait de colis",
+        icon: "📦"
+      },
+      {
+        name: "Dépôt de Pain",
+        description: "Pain frais livré chaque matin",
+        icon: "🥖"
+      },
+      {
+        name: "Click & Collect",
+        description: "Commandez par téléphone, on prépare vos courses",
+        icon: "📱"
+      },
+      {
+        name: "Station Vélo",
+        description: "Parking vélos sécurisé, gonfleur, kit de réparation",
+        icon: "🚴"
+      },
+      {
+        name: "WiFi Gratuit",
+        description: "Connexion gratuite pour nos clients",
+        icon: "📶"
+      },
+      {
+        name: "Impression",
+        description: "Service d'impression et photocopies",
+        icon: "🖨️"
+      }
     ]
   },
 
-  offering: {
-    title: "Notre Carte",
-    sections: [
+  terrasse: {
+    title: "Notre Terrasse",
+    description: "Un espace convivial pour toute la famille",
+    boissons: {
+      title: "Boissons",
+      categories: [
+        {
+          name: "Boissons fraîches",
+          items: ["Sodas", "Jus de fruits", "Limonade", "Thé glacé"]
+        },
+        {
+          name: "Boissons chaudes",
+          items: ["Café", "Chocolat chaud", "Thé", "Tisanes"]
+        },
+        {
+          name: "Snacking",
+          items: ["Crêpes", "Galettes", "Viennoiseries", "Glaces"]
+        }
+      ]
+    },
+    atouts: [
+      "Terrasse ombragée",
+      "Aire de jeux à proximité",
+      "Ambiance familiale",
+      "Sans alcool"
+    ]
+  },
+
+  hebergement: {
+    title: "Hébergement Étape",
+    description: "Chambres confortables pour une ou plusieurs nuits",
+    chambres: [
       {
-        name: "Galettes de Blé Noir",
-        description: "Croustillantes et généreuses, garnies avec des produits de qualité",
-        highlight: "Recette traditionnelle bretonne, pâte 100% blé noir"
+        type: "Chambre double",
+        tarif: "45-60€/nuit",
+        equipements: ["Lit double", "Salle de bain privée", "WiFi"]
       },
       {
-        name: "Crêpes Sucrées",
-        description: "Moelleuses et gourmandes, pour tous les goûts",
-        highlight: "Des classiques intemporels aux créations originales"
-      },
-      {
-        name: "Toute la Journée",
-        description: "Petits déjeuners, brunchs, déjeuners, goûters et dîners",
-        items: [
-          "Petits déjeuners & brunchs maison",
-          "Omelettes et salades fraîches",
-          "Pâtisseries et tartes du jour",
-          "Large choix de thés, cafés et boissons"
-        ]
+        type: "Chambre simple",
+        tarif: "35-45€/nuit", 
+        equipements: ["Lit simple", "Salle de bain partagée", "WiFi"]
       }
     ],
-    specialties: [
-      "Glaces artisanales",
-      "Cidres bretons",
-      "Sélection de vins et bières locales",
-      "Jus de fruits frais"
-    ]
+    services: ["Petit-déjeuner disponible", "Parking gratuit", "Accès 24h/24"],
+    clientele: ["Cyclotouristes (Voie Verte)", "Routiers et commerciaux", "Touristes Centre-Bretagne", "Travailleurs en déplacement"]
   },
 
-  testimonials: [
-    {
-      text: "Bravo Justine pour tes galettes et crêpes. La cuisine ouverte permet de voir la chef à l'œuvre et les galettes sont bien faites en temps réel, servies avec le sourire.",
-      author: "Avis client"
-    },
-    {
-      text: "Ambiance cosy, galettes généreuses comme on les aime. Très bonne crêperie, produits de qualité !",
-      author: "Avis client"
-    },
-    {
-      text: "Accueil très agréable, galettes et crêpes délicieuses. Nous reviendrons avec plaisir !",
-      author: "Avis client"
-    }
-  ],
-
-  location: {
-    title: "Au Cœur d'Erquy",
-    description: "À 200 mètres de la plage, dans le centre-ville d'Erquy",
-    nearbyAttractions: [
-      "Plage du Centre - 200m",
-      "Port d'Erquy - 400m",
-      "Cap d'Erquy - 2km",
-      "Sentiers de randonnée GR34"
+  localisation: {
+    titre: "Au cœur de la Bretagne",
+    description: "Le Quillio, commune labellisée 'Patrimoine Rural de Bretagne'",
+    proximite: [
+      { ville: "Loudéac", distance: "10 km" },
+      { ville: "Saint-Brieuc", distance: "25 min" },
+      { ville: "Pontivy", distance: "20 min" }
     ],
-    parking: "Stationnement à proximité immédiate"
+    acces: "Sur la RD35 • 2200 véhicules/jour • Parking gratuit"
+  },
+
+  colors: {
+    // Palette chaleureuse et joyeuse
+    beigeChaud: "#f5e6d3",    // Beige chaud crème
+    orangeDoux: "#ff9966",    // Orange doux accueillant
+    jauneMiel: "#ffc857",     // Jaune miel lumineux
+    rougeTerroir: "#d9534f",  // Rouge chaud convivial
+    vertNature: "#8eb69b",    // Vert nature doux
+    marron: "#8b6f47",        // Marron bois chaleureux
+    blanc: "#ffffff",
+    noirTexte: "#2d2d2d"
   },
 
   seo: {
-    title: "Chez Justine - Crêperie & Salon de Thé à Erquy | Fait Maison",
-    description: "Crêperie artisanale Chez Justine à Erquy : galettes et crêpes 100% faites maison, jardin secret, cuisine ouverte. Ouvert du petit-déjeuner au dîner. Réservation conseillée.",
+    title: "L'Épicerie Le Quillio | Commerce de Proximité - Produits Locaux",
+    description: "Épicerie de village au Quillio (22460) : produits frais et locaux, pain quotidien, terrasse conviviale, hébergement. Ouvert 7j/7. Services : relais colis, Click & Collect, WiFi. ☎ 06 69 02 22 92",
     keywords: [
-      "crêperie Erquy",
-      "crêpes Erquy",
-      "galettes Erquy",
-      "salon de thé Erquy",
-      "restaurant Erquy",
-      "fait maison Erquy",
-      "Chez Justine",
-      "crêperie 22430",
-      "où manger à Erquy",
-      "crêperie centre ville Erquy",
-      "cuisine bretonne Erquy",
-      "crêpes bretonnes Côtes d'Armor"
-    ],
-    og: {
-      title: "Chez Justine - Crêperie Artisanale à Erquy",
-      description: "Galettes & crêpes 100% maison dans un cadre cosy avec jardin secret au cœur d'Erquy",
-      type: "restaurant",
-      locale: "fr_FR"
-    }
+      "épicerie Le Quillio",
+      "commerce Le Quillio",
+      "produits locaux Le Quillio",
+      "pain frais Le Quillio",
+      "épicerie Côtes d'Armor",
+      "terrasse Le Quillio",
+      "hébergement Le Quillio",
+      "relais colis Le Quillio",
+      "commerce de proximité",
+      "produits bretons",
+      "22460"
+    ]
   }
 };
