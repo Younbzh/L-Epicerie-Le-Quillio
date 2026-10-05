@@ -491,7 +491,7 @@ function App() {
             <p className="font-semibold">&copy; {new Date().getFullYear()} {siteConfig.fullName}. Tous droits réservés.</p>
             <p className="mt-2">{siteConfig.localisation.description}</p>
             <p className="mt-4">
-              Site créé par <a href="https://avalon-stratege.fr" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold transition-colors duration-200">Avalon Stratège</a>
+              Site créé par <a href="https://www.avalon-stratege.com" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold transition-colors duration-200">Avalon Stratège</a>
             </p>
           </div>
         </div>
